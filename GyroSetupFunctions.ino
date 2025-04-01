@@ -8,6 +8,7 @@ void updateMag(float &mx, float &my, float &mz) {
   mz = M_Ainv[2][0] * temp[0] + M_Ainv[2][1] * temp[1] + M_Ainv[2][2] * temp[2]; 
 }
 
+
 void applyScalingFactor(float &mx, float &my, float &mz, float expectedFieldStrength) {
   float currentMagnitude = sqrt(mx * mx + my * my + mz * mz);
   float scaleFactor = expectedFieldStrength / currentMagnitude;
